@@ -1,10 +1,9 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { AuthProvider } from '../context/AuthContext';
 
 export const metadata: Metadata = {
-  title: 'Next.js Auth Flow',
-  description: 'Authentication flow with custom hooks',
+  title: 'Analytics Dashboard',
+  description: 'Shadcn UI Dashboard Assignment',
 };
 
 export default function RootLayout({
@@ -14,9 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <AuthProvider>{children}</AuthProvider>
-      </body>
+      <body className="bg-gray-50 text-gray-900 antialiased">{children}</body>
     </html>
   );
 }
